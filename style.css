@@ -1,90 +1,4 @@
-html * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
 
-:before,
-*:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-:focus,
-:active {
-    outline: none;
-}
-
-a:focus,
-a:active {
-    outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-    display: block;
-}
-
-html,
-body {
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 10px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-input,
-button,
-textarea {
-    font-family: inherit;
-}
-
-input::-ms-clear {
-    display: none;
-}
-
-button {
-    cursor: pointer;
-}
-
-button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
-
-a,
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-ul li {
-    list-style: none;
-}
-
-img {
-    vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: inherit;
-    font-weight: 400;
-}
 
 /* ----------------------------------------------------------------- */
 /* --- 01 TYPOGRAPHY SYSTEM
@@ -144,8 +58,64 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 /* _____________________________________________________________________________ */
 
+/* useble  */
+
+
+
+/* ______________________________________ */
 section{
     background-color: #fdf2e9;
+    
+}
+
+/* important */
+
+.container{
+    
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/* ______________________________________________ */
+
+.mT{
+    margin-top: 30rem;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem 2.4rem ;
+    
+}
+
+.nav_links ul{
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    
+}
+
+.links li:last-child{
+    padding: 1.6rem 2.4rem;
+    background-color: #e67e22;
+    border-radius: 1rem;
+}
+
+
+
+.links li a{
+    color: #333;
+    font-size: 1.6rem;
+}
+
+.nav_logo{
+    width: 10%;
+    align-self: center;
+}
+
+.omnifood_logo{
+    width: 100%;
+    align-self: center;
 }
 
 .hero{
@@ -153,25 +123,24 @@ section{
     grid-template-columns: 1fr 1fr;
     gap: 4.8rem;
     align-items: center;
-    height: 100vh;
-    padding-top: 6.4rem;
-    padding: 0 8rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .img{
-    width: 100%;
+    width: 80%;
 
 }
 
 .title{
-font-size: 5.2rem;
+font-size: 4.4rem;
 font-weight: 700;
 letter-spacing: 0.75px;
 margin-bottom: 3.2rem;
 }
 
 .secondary_text{
-    font-size: 3.6rem;
+    font-size: 3rem;
     margin-bottom: 4.8rem;
     color: #6f6f6f;
 }
@@ -180,7 +149,8 @@ margin-bottom: 3.2rem;
     display: flex;
 }
 
-a {
+.main_button ,.more
+ {
  
     padding: 20px 40px;
     border-radius: 9px;
@@ -228,8 +198,8 @@ background-color:  #eb984e;
 }
 
 .reposotors_img img{
-   width: 4.4rem;
-   height: 4.4rem;
+   width: 3.6rem;
+   height: 3.6rem;
    border-radius: 50%;
    margin-right: -12px;
    border: 3px solid #fdf2e9;
