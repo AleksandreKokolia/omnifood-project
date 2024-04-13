@@ -58,30 +58,52 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 /* _____________________________________________________________________________ */
 
-/* useble  */
-
-
-
-/* ______________________________________ */
 section{
-    background-color: #fdf2e9;
-    
+    padding: 3.2rem 0;
+}
+
+
+html{
+    font-family: sans-serif;
 }
 
 /* important */
 
 .container{
     
-    max-width: 120rem;
+    max-width: 130rem;
     margin: 0 auto;
 }
 /* ______________________________________________ */
 
+/* usefull */
 .mT{
     margin-top: 30rem;
 }
 
+
+.gt_collums_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+ 
+    
+}
+
+.gr_gap{
+    display: grid;
+    gap: 6.4rem;
+}
+
+.margin_left_sm{
+    margin-right: 1.6rem;
+}
+
+/* -------------------------------------------------------- */
+
+/* navigaton */
 .navigation{
+    background-color: #fdf2e9;
     display: flex;
     justify-content: space-between;
     padding: 1.6rem 2.4rem ;
@@ -118,13 +140,14 @@ section{
     align-self: center;
 }
 
+/* ________________________________________________________ */
+
+/* hero */
 .hero{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4.8rem;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    background-color: #fdf2e9;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
 }
 
 .img{
@@ -157,9 +180,7 @@ margin-bottom: 3.2rem;
     font-size: 2rem;
 }
 
-.margin_left_sm{
-    margin-right: 1.6rem;
-}
+
 
 .main_button{
     color: #fff;
@@ -213,3 +234,124 @@ background-color:  #eb984e;
 .repositors_text span{
     color: #e67e22;
 }
+
+/* __________________________________________________________ */
+/* how it works */
+
+.howItWorks_title{
+    text-align: center;
+    letter-spacing: 1.5px;  
+    font-size: 4.4rem;
+    font-weight: 700;
+    margin-bottom: 6.4rem;
+
+}
+
+
+.how_it_works_component_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    gap: 3rem;
+
+}
+
+.how_it_works_component_number{
+color: #bfbfbf;
+font-size: 5.2rem;
+
+
+}
+
+.component_text_title{
+    font-weight: 700;
+    font-size: 3rem;
+   
+}
+
+
+.component_text_information{
+    font-size: 2.4rem;
+    color: #333;
+}
+
+.how_it_works_component_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.how_it_works_component_img img{
+    width: 35%;
+   }
+
+
+   .left_side,.right_side{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       gap: 6.4rem;
+
+   }
+
+
+.how_it_works_component_img::before{
+    content:"" ;
+    width: 65%;
+    padding-bottom: 65%;
+    background-color: #fdf2e9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: -2;
+     
+ 
+}
+
+.how_it_works_component_img::after{
+    content:"" ;
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: #f2b47d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* ___________________________________________________________ */
+
+/* feachured in */
+
+.featured_titile{
+    text-align: center;
+    font-size: 2.4rem; ;
+    filter: brightness(0);
+    opacity:40% ;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+}
+
+.logos{
+display: flex;
+justify-content: space-around;
+}
+
+.logos img{
+height: 3rem;
+filter: brightness(0);
+opacity:40% ;
+
+}
+
+/* ____________________________________________________________ */
+
+
+
+
