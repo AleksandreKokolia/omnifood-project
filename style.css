@@ -56,9 +56,9 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 /* _____________________________________________________________________________ */
 
-section {
-  padding: 4.8rem 0;
-}
+/* section {
+  padding: 9.6rem 0;
+} */
 
 html {
   font-family: sans-serif;
@@ -70,9 +70,25 @@ html {
   max-width: 130rem;
   margin: 0 auto;
 }
+
+.gr_gap {
+  display: grid;
+  gap: 6.4rem;
+}
+
+.gr_gap:not(:last-child) {
+  display: grid;
+  gap: 6.4rem;
+}
+
 /* ______________________________________________ */
 
 /* usefull */
+
+.margin_button_big {
+  margin-bottom: 8rem;
+}
+
 .mT {
   margin-top: 30rem;
 }
@@ -89,6 +105,11 @@ html {
 .gt_collums_3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gt_collums_4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .gr_gap {
@@ -142,8 +163,7 @@ html {
 /* hero */
 .hero {
   background-color: #fdf2e9;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding: 9.6rem 0;
 }
 
 .img {
@@ -169,9 +189,6 @@ html {
 
 .main_button,
 .more {
-  padding: 20px 40px;
-  border-radius: 9px;
-  font-size: 2rem;
 }
 
 .main_button {
@@ -182,6 +199,10 @@ html {
 
 .main_button:link,
 .main_button:visited {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 9px;
+  font-size: 2rem;
   background-color: #eb984e;
 }
 
@@ -231,7 +252,40 @@ html {
 }
 
 /* __________________________________________________________ */
+
+/* feachured in */
+
+.featured_in {
+  padding: 9.6rem 0;
+}
+
+.featured_titile {
+  text-align: center;
+  font-size: 2.4rem;
+  filter: brightness(0);
+  opacity: 40%;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3rem;
+  filter: brightness(0);
+  opacity: 40%;
+}
+
+/* ____________________________________________________________ */
+
 /* how it works */
+
+.howItWorks {
+  padding: 9.6rem 0;
+}
 
 .howItWorks_title {
   text-align: center;
@@ -239,6 +293,7 @@ html {
   font-size: 4.4rem;
   font-weight: 700;
   margin-bottom: 6.4rem;
+  /* padding: 9.6rem 0; */
 }
 
 .how_it_works_component_text {
@@ -310,32 +365,11 @@ html {
 }
 
 /* ___________________________________________________________ */
-
-/* feachured in */
-
-.featured_titile {
-  text-align: center;
-  font-size: 2.4rem;
-  filter: brightness(0);
-  opacity: 40%;
-  text-transform: uppercase;
-  margin-bottom: 3.2rem;
-}
-
-.logos {
-  display: flex;
-  justify-content: space-around;
-}
-
-.logos img {
-  height: 3rem;
-  filter: brightness(0);
-  opacity: 40%;
-}
-
-/* ____________________________________________________________ */
-
 /* _____________________________________________________________ */
+
+.meal {
+  padding: 9.6rem 0;
+}
 
 .meal_header {
   margin-bottom: 8rem;
@@ -343,11 +377,13 @@ html {
 
 .meals_meal {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.178);
+  transition: all 0.3s;
+  border-radius: 11px;
+  overflow: hidden;
 }
 
 .meals_meal:hover {
   transform: translateY(-5rem);
-  transition: all 0.3s;
 }
 
 .meals_meal_img {
@@ -421,14 +457,14 @@ html {
   font-size: 3.6rem;
 }
 
-.diet_list {
+.list {
   font-size: 1.8rem;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
 }
 
-.diet_list li {
+.list li {
   display: flex;
   align-items: center;
   gap: 1.2rem;
@@ -449,9 +485,213 @@ html {
 }
 
 .see_also:hover {
-  border: none;
+  border-bottom: 1px solid transparent;
 }
 
 .meals_link {
   text-align: center;
+}
+
+/* ____________________________________________________________________________ */
+
+.Testimonial {
+  background-color: #fdf2e9;
+}
+
+.grid_testimonial {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+}
+
+.title {
+  margin-bottom: 3.4rem;
+}
+
+.testimonial_name {
+  font-size: 2rem;
+  color: #c96d1d;
+}
+.testimonial_title {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.testimonials_img {
+  height: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+.testimonials_text {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial_right {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  gap: 1rem;
+}
+
+.testimonials_name {
+  font-size: 1.8rem;
+  color: #777;
+}
+
+.image_items {
+  overflow: hidden;
+}
+
+.image_img {
+  width: 100%;
+  transition: all 0.7s;
+}
+
+.image_img:hover {
+  transform: scale(1.5);
+}
+
+.testimonial_left {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  padding: 9.6rem 6.4rem;
+}
+
+/* ____________________________________________________________________ */
+
+.pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing_name {
+  font-size: 2rem;
+  color: #c96d1d;
+}
+.prising_tittle {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.prising_header {
+  margin-bottom: 4.8rem;
+}
+
+.price_container {
+  padding: 4.8rem;
+  width: 50%;
+  border-radius: 11px;
+  text-align: center;
+}
+
+.starter {
+  border: 3px solid #fdf2e9;
+  justify-self: end;
+}
+
+.complete {
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+.complete::after {
+  content: "best value";
+  position: absolute;
+  right: -20%;
+  top: 7%;
+  background-color: #ffd43b;
+  padding: 10px 0;
+  width: 30rem;
+  text-align: center;
+  font-size: 1.8rem;
+  transform: rotate(45deg);
+  font-weight: 700;
+}
+
+.prising_header {
+  margin-bottom: 4.8rem;
+}
+
+.list {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.list_icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #c96d1d;
+}
+
+.price_list {
+  margin-bottom: 6.8rem;
+}
+
+.price_tittle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 3.6rem;
+  color: #c96d1d;
+  margin-bottom: 3.2rem;
+}
+
+.price_price span {
+  font-size: 3.6rem;
+}
+
+.price_price {
+  text-align: center;
+  font-weight: 700;
+  font-size: 5.2rem;
+  margin-bottom: 2.4rem;
+}
+.price_text {
+  margin-bottom: 4.8rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #777;
+}
+
+.mergin_top_auto {
+  margin-top: auto;
+}
+
+.feature_item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  justify-self: center;
+}
+.feature_img {
+  border-radius: 50%;
+  color: #eb984e;
+  background-color: #fdf2e9;
+  padding: 1.6rem 1.6rem;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.feature_title {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.feature_text {
+  font-size: 2rem;
+  color: #6f6f6f;
+}
+
+.features {
+}
+.features_header {
+  text-align: center;
+  color: #6f6f6f;
+  font-size: 1.6rem;
+  margin-bottom: 6.4rem;
 }
