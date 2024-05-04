@@ -60,8 +60,13 @@ Medium: 11px
   padding: 9.6rem 0;
 } */
 
+*:focus {
+  box-shadow: 0 0 0 5px hsla(37, 95%, 42%, 0.324);
+}
+
 html {
   font-family: sans-serif;
+  font-size: 62.5%;
 }
 
 /* important */
@@ -84,6 +89,16 @@ html {
 /* ______________________________________________ */
 
 /* usefull */
+
+.section_name {
+  font-size: 2rem;
+  color: #c96d1d;
+}
+
+.section_title {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
 
 .margin_button_big {
   margin-bottom: 8rem;
@@ -113,7 +128,6 @@ html {
 }
 
 .gr_gap {
-  display: grid;
   gap: 6.4rem;
 }
 
@@ -137,7 +151,7 @@ html {
   gap: 2.4rem;
 }
 
-.links li:last-child {
+.links li:last-child a {
   padding: 1.6rem 2.4rem;
   background-color: #e67e22;
   border-radius: 1rem;
@@ -186,17 +200,13 @@ html {
 .botton {
   display: flex;
 }
-
-.main_button,
-.more {
-}
-
+.btn,
 .main_button {
   color: #fff;
   justify-self: center;
   align-self: center;
 }
-
+.btn,
 .main_button:link,
 .main_button:visited {
   display: inline-block;
@@ -499,6 +509,7 @@ html {
 }
 
 .grid_testimonial {
+  align-items: center;
   display: grid;
   grid-template-columns: 60fr 40fr;
 }
@@ -578,8 +589,10 @@ html {
 }
 
 .price_container {
+  display: flex;
+  flex-direction: column;
   padding: 4.8rem;
-  width: 50%;
+  width: 70%;
   border-radius: 11px;
   text-align: center;
 }
@@ -687,11 +700,87 @@ html {
   color: #6f6f6f;
 }
 
-.features {
-}
 .features_header {
   text-align: center;
   color: #6f6f6f;
   font-size: 1.6rem;
   margin-bottom: 6.4rem;
+}
+/* __________________________________________________________________________ */
+
+.cta {
+  padding: 9.6rem 0;
+}
+
+.cta_container {
+  background: linear-gradient(#e67e22, #eb984e);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.grid_cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.cta_text {
+  color: #36170c;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  font-size: 2rem;
+}
+
+.cta_img {
+  background: linear-gradient(rgba(230, 125, 34, 0.35), rgba(235, 151, 78, 0.3)),
+    url(img/eating.jpg);
+  background-size: cover;
+}
+.cta-form input:focus,
+.cta-form select:focus {
+  box-shadow: 0 0 0 5px hsla(0, 0%, 0%, 0.324);
+}
+
+.cta-form input,
+.cta-form select {
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 1.2rem;
+  width: 100%;
+  cursor: pointer;
+}
+.cta-form label {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.cta-form select {
+  appearance: none;
+}
+
+.form-gap {
+  gap: 2.4rem;
+}
+
+.cta-button {
+  width: 100%;
+  background-color: #3f1b0e;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 1.2rem;
+  align-self: end;
+}
+/* custom arrow realy useble  */
+.custom_icon {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 5%;
+  pointer-events: none;
+}
+
+.custom_icon_box {
+  position: relative;
 }
