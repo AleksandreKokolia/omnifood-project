@@ -74,6 +74,7 @@ html {
 .container {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 .gr_gap {
@@ -130,7 +131,9 @@ html {
 .gr_gap {
   gap: 6.4rem;
 }
-
+.gr-align-center {
+  align-items: center;
+}
 .margin_left_sm {
   margin-right: 2.4rem;
 }
@@ -156,11 +159,13 @@ html {
 /* -------------------------------------------------------- */
 
 /* navigaton */
-.navigation {
+.header {
   background-color: #fdf2e9;
   display: flex;
   justify-content: space-between;
-  padding: 1.6rem 2.4rem;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
 }
 
 .nav_links ul {
@@ -182,12 +187,12 @@ html {
 
 .nav_logo {
   width: 15rem;
-  align-self: center;
+  /* align-self: center; */
 }
 
 .omnifood_logo {
   width: 100%;
-  align-self: center;
+  /* align-self: center; */
 }
 
 /* ________________________________________________________ */
@@ -199,7 +204,7 @@ html {
 }
 
 .img {
-  width: 80%;
+  width: 100%;
 }
 
 .title {
@@ -269,7 +274,9 @@ html {
   margin-right: -12px;
   border: 3px solid #fdf2e9;
 }
-
+.reposotors_img img:last-child {
+  margin: 0;
+}
 .repositors_text {
   font-size: 2rem;
   color: #6f6f6f;
@@ -428,7 +435,10 @@ html {
   font-size: 3.6rem;
   font-weight: 700;
 }
-
+.mela-tags {
+  display: flex;
+  gap: 1.4rem;
+}
 .tips {
   font-size: 1.6rem;
   display: inline-block;
@@ -556,10 +566,9 @@ html {
 }
 
 .testimonial_right {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 1.4rem 1.4rem 1.4rem 0;
   display: grid;
-  gap: 1rem;
+  gap: 1.4rem;
 }
 
 .testimonials_name {
@@ -577,7 +586,7 @@ html {
 }
 
 .image_img:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 .testimonial_left {
@@ -618,6 +627,7 @@ html {
 .starter {
   border: 3px solid #fdf2e9;
   justify-self: end;
+  padding: 4.5rem;
 }
 
 .complete {
