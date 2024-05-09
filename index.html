@@ -12,7 +12,9 @@
     <header>
       <nav class="navigation">
         <div class="nav_logo">
-          <img src="img/omnifood-logo.png" alt="" class="omnifood_logo" />
+          <a href="#">
+            <img src="img/omnifood-logo.png" alt="" class="omnifood_logo" />
+          </a>
         </div>
         <div class="nav_links">
           <ul class="links">
@@ -377,7 +379,7 @@
           <span class="section_name">pricing</span>
           <h2 class="section_title">Eating well without breaking the bank</h2>
         </div>
-        <div class="container gr_gap gt_collums_2 margin_button_big">
+        <div class="container gr_gap gt_collums_2 margin_buttom_big">
           <div class="starter price_container">
             <div class="price_header">
               <div class="price_tittle">starter</div>
@@ -512,12 +514,18 @@
               <form class="cta-form gt_collums_2 form-gap" action="#">
                 <div>
                   <label for="name">full name</label>
-                  <input
-                    id="name"
-                    type="text"
-                    placeholder="your name"
-                    required
-                  />
+                  <div class="custom_icon_box">
+                    <input
+                      id="name"
+                      type="text"
+                      placeholder="your name"
+                      required
+                    />
+                    <ion-icon
+                      class="custom_icon"
+                      name="person-circle-outline"
+                    ></ion-icon>
+                  </div>
                 </div>
                 <div>
                   <label for="email">email address</label>
@@ -560,15 +568,73 @@
           </div>
         </div>
       </section>
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      ></script>
-
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-      ></script>
     </main>
+    <footer class="footer">
+      <div class="container footer_grid gr_gap">
+        <div class="social_media">
+          <div class="footer_logo">
+            <a href="#">
+              <img src="img/omnifood-logo.png" alt="" class="omnifood_logo" />
+            </a>
+          </div>
+          <div class="flex margin_buttom">
+            <ion-icon class="footer_icon" name="logo-instagram"></ion-icon>
+            <ion-icon class="footer_icon" name="logo-facebook"></ion-icon>
+            <ion-icon class="footer_icon" name="logo-twitter"></ion-icon>
+          </div>
+          <p class="social_media_text">
+            Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="contacts">
+          <p class="p_header">Contact us</p>
+          <p class="adress">
+            623 Harrison St., 2nd Floor, San Francisco, CA 94107
+          </p>
+
+          <div>
+            <p class="phone"><a href="tel:415-201-6370">415-201-6370</a></p>
+            <p class="email">
+              <a href="mailto: name@email.com"> name@email.com </a>
+            </p>
+          </div>
+        </div>
+        <div class="account">
+          <p class="p_header">Account</p>
+          <ul class="footer_list">
+            <li><a class="footer_list_item" href="#">Create account</a></li>
+            <li><a class="footer_list_item" href="#">Sign in</a></li>
+            <li><a class="footer_list_item" href="#">iOS app </a></li>
+            <li><a class="footer_list_item" href="#">Android app</a></li>
+          </ul>
+        </div>
+        <div class="company">
+          <p class="p_header">Company</p>
+          <ul class="footer_list">
+            <li><a class="footer_list_item" href="#">About Omnifood</a></li>
+            <li><a class="footer_list_item" href="#">For Business </a></li>
+            <li><a class="footer_list_item" href="#">Cooking partners</a></li>
+            <li><a class="footer_list_item" href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="recources">
+          <p class="p_header">Resources</p>
+          <ul class="footer_list">
+            <li><a class="footer_list_item" href="#">Recipe directory</a></li>
+            <li><a class="footer_list_item" href="#">Help center </a></li>
+            <li><a class="footer_list_item" href="#">Privacy & terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

@@ -81,11 +81,6 @@ html {
   gap: 6.4rem;
 }
 
-.gr_gap:not(:last-child) {
-  display: grid;
-  gap: 6.4rem;
-}
-
 /* ______________________________________________ */
 
 /* usefull */
@@ -100,7 +95,7 @@ html {
   font-weight: 700;
 }
 
-.margin_button_big {
+.margin_buttom_big {
   margin-bottom: 8rem;
 }
 
@@ -127,12 +122,35 @@ html {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.gt_collums_5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
 .gr_gap {
   gap: 6.4rem;
 }
 
 .margin_left_sm {
-  margin-right: 1.6rem;
+  margin-right: 2.4rem;
+}
+
+/* custom arrow realy useble  */
+.custom_icon {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 5%;
+  pointer-events: none;
+}
+
+.custom_icon_box {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  gap: 2.4rem;
 }
 
 /* -------------------------------------------------------- */
@@ -163,7 +181,7 @@ html {
 }
 
 .nav_logo {
-  width: 10%;
+  width: 15rem;
   align-self: center;
 }
 
@@ -709,7 +727,7 @@ html {
 /* __________________________________________________________________________ */
 
 .cta {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 12.8rem 0;
 }
 
 .cta_container {
@@ -772,15 +790,83 @@ html {
   padding: 1.2rem;
   align-self: end;
 }
-/* custom arrow realy useble  */
-.custom_icon {
-  position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 5%;
-  pointer-events: none;
+/* ____________________________________________________________________________ */
+.footer {
+  border-top: 5px solid #fdf2e9;
+  padding: 12.8rem 0;
+  color: #777;
+}
+.footer_grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
-.custom_icon_box {
-  position: relative;
+.footer_logo {
+  width: 18rem;
+  align-self: center;
+  margin-bottom: 2.4rem;
+}
+
+.footer_icon {
+  filter: brightness(0);
+  opacity: 60%;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.social_media_text {
+  font-size: 1.6rem;
+  color: inherit;
+}
+
+.margin_buttom {
+  margin-bottom: 6.4rem;
+}
+
+.p_header {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.adress {
+  color: inherit;
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.phone a:link,
+.phone a:visited,
+.email a:link,
+.email a:visited {
+  color: #777;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.phone a:hover,
+.phone a:active,
+.email a:hover,
+.email a:active {
+  color: #333;
+}
+
+.footer_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.footer_list_item {
+  color: inherit;
+}
+
+.footer_list_item:link,
+.footer_list_item:visited {
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.footer_list_item:hover,
+.footer_list_item:active {
+  color: #333;
 }
