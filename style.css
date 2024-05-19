@@ -159,7 +159,9 @@ html {
 /* -------------------------------------------------------- */
 
 /* navigaton */
+
 .header {
+  position: relative;
   background-color: #fdf2e9;
   display: flex;
   justify-content: space-between;
@@ -168,16 +170,31 @@ html {
   padding: 0 4.8rem;
 }
 
-.nav_links ul {
+.nav_links {
+  padding: 1rem;
+}
+
+.links {
   display: flex;
   align-items: center;
   gap: 2.4rem;
+  color: #333;
+  font-weight: 600;
 }
 
 .links li:last-child a {
   padding: 1.6rem 2.4rem;
   background-color: #e67e22;
   border-radius: 1rem;
+  color: #fff;
+}
+.links li:last-child a:hover {
+  color: #d1cece;
+  background-color: #c96d1d;
+}
+
+.links li a:hover {
+  color: #333;
 }
 
 .links li a {
@@ -193,6 +210,26 @@ html {
 .omnifood_logo {
   width: 100%;
   /* align-self: center; */
+}
+
+/*? mobile navigation */
+
+.btn_mobile_tag {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon_mobile_nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #333;
+}
+
+.icon_mobile_nav[name="close-outline"] {
+  display: none;
 }
 
 /* ________________________________________________________ */
@@ -457,7 +494,7 @@ html {
 .meals_meal_list {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 3rem;
 }
 
 .meals_meal_list li {
@@ -880,3 +917,132 @@ html {
 .footer_list_item:active {
   color: #333;
 }
+/* ? medias __________________________________________________________________*/
+
+@media (max-width: 1250px) {
+  html {
+    font-size: 50%;
+  }
+
+  .meals_meal_list {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 40%;
+  }
+
+  nav {
+    font-size: 50%;
+  }
+
+  .hero_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .botton {
+    display: block;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .repositors {
+    justify-content: center;
+  }
+  .image {
+    justify-self: center;
+  }
+
+  .img {
+    width: 50%;
+  }
+
+  .grid_testimonial {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial_right {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  /*? mobile_navigation  */
+
+  .btn_mobile_tag {
+    display: block;
+  }
+
+  .icon_mobile_nav {
+  }
+
+  .nav_links {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    transform: translateX(100%);
+    font-size: 3rem;
+    /* hide navigacion */
+    /* 1) hide is visually */
+    opacity: 0;
+
+    /* 2) hide it unaccessible to mouse and keibord */
+    pointer-events: none;
+
+    /* 3) hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+
+  .nav_open .nav_links {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav_open .icon_mobile_nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav_open .icon_mobile_nav[name="menu-outline"] {
+    display: none;
+  }
+  .links li a {
+    color: #333;
+    font-size: 1.6rem;
+    font-size: 3rem;
+  }
+}
+
+/* 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
