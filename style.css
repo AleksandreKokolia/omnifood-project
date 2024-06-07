@@ -573,6 +573,11 @@ html {
   background-color: #fdf2e9;
 }
 
+.testimonial_right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid_testimonial {
   align-items: center;
   display: grid;
@@ -1035,6 +1040,47 @@ html {
     color: #333;
     font-size: 1.6rem;
     font-size: 3rem;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reposotors_img img {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .gt_collums_3,
+  .gt_collums_4,
+  .gt_collums_5 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .price_container,
+  .price_container {
+    width: 100%;
+  }
+
+  .diet {
+    grid-column: 1/-1;
+  }
+
+  .diet_tittle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .meal_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .logos img {
+    height: 2.4rem;
   }
 }
 
